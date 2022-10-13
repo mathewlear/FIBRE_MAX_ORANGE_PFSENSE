@@ -5,6 +5,7 @@ Requirements:
 - Leox LXT-010H-D ONT "GPON <-> 2.5Gbe"
 - Patched DHCP6C: https://github.com/mathewlear/FIBRE_MAX_ORANGE_PFSENSE/blob/main/dhcp6c
 - Original DHCP6C in case rollback is needed: https://github.com/mathewlear/FIBRE_MAX_ORANGE_PFSENSE/blob/main/dhcp6c.old
+- Generate option-90 using script or VirtIT blog post here: https://wiki.virtit.fr/doku.php/kb:linux:pfsense:remplacer_sa_box_orange_par_un_pfsense
 
 Steps:
 - Fresh install pFsense+ 22.05
