@@ -8,16 +8,20 @@ Requirements:
 
 Steps:
 - Fresh install pFsense+ 22.05
+
 -  Configuration of LXT-010H-D ONT with:
     - flash set GPON_SN SMBSxxxxxxxx
     - flash set PON_VENDOR_ID SMBS
     - flash set HW_HWVER SMBSSGLB6107
-- Configuration of pFsense
+
+- Configuration of pFsense:
+
     - IPv4 WAN Interface
         - IPv4 Configuration Type: DHCP
         - Options Check: Advanced Configuration
         - Send options: dhcp-class-identifier "sagem",user-class "+FSVDSL_livebox.Internet.softathome.Livebox4",option-90 <https://bit.ly/3CoVwLq>
         - Request options: subnet-mask,broadcast-address,dhcp-lease-time,dhcp-renewal-time,dhcp-rebinding-time,domain-search,routers,domain-name-servers,option-90
+
     - IPv6 WAN Interface
         - Options Check: Advanced Configuration
         - Do not wait for a RA: Check
